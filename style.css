@@ -4,6 +4,36 @@
   box-sizing: border-box;
 }
 
+:root {
+  --article-color-one: darkslatepurple;
+  --article-color-two: darkorange;
+  --tag-color: deepskyblue;
+  --s-base: 1rem;
+  --s-border: 0.125rem;
+  --s-radius-outer: 0.75rem;
+  --s-radius-inner: calc(var(--s-radius-outer) / 3);
+}
+
 html {
   font-family: sans-serif;
+  font-size: 20px;
+}
+
+body {
+  margin: 2rem;
+}
+
+.preview-card {
+  border: 0.125rem solid black;
+  max-width: 400px;
+  padding: 1rem;
+}
+
+.card-header {
+  display: flex;
+  flex-direction: column;
+}
+
+.header-info {
+  display: flex;
 }
