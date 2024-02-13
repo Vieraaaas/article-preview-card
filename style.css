@@ -5,9 +5,9 @@
 }
 
 :root {
-  --article-color-one: darkslateblue;
-  --article-color-two: darkorange;
+  --article-color: darkslateblue;
   --tag-color: deepskyblue;
+  --white: white;
   --s-base: 1rem;
   --s-border: 0.125rem;
   --s-radius-outer: 0.75rem;
@@ -29,7 +29,7 @@ body {
   border-radius: var(--s-radius-outer);
   max-width: 400px;
   padding: var(--s-base);
-  box-shadow: 0.5rem 0.5rem var(--article-color-one);
+  box-shadow: 0.5rem 0.5rem var(--article-color);
 }
 
 .card-header {
@@ -54,7 +54,7 @@ body {
   margin-left: auto;
   max-height: 1.5rem;
   align-self: center;
-  border: var(--s-border) solid var(--article-color-one);
+  border: var(--s-border) solid var(--article-color);
   border-radius: 1rem;
   margin-right: 0.25rem;
 }
@@ -69,4 +69,12 @@ body {
 
 .header-tag p {
   margin: 0;
+}
+
+.nav-link {
+  background-color: var(--article-color);
+  color: var(--white);
+  border-radius: var(--s-radius-inner);
+  text-decoration: none;
+  padding: 0.5rem;
 }
